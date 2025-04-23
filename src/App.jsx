@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-    <div className=''>
+    <div className='container w-full p-4 md:p-8'>
       <h1 className=''>Enter the color to change</h1>
       <input type="text" name="input_color" id="color" placeholder='Enter color name or code to change' className='bg-white text-black w-70 border-2 rounded' />
       <button className='button bg-white text-black border-2  rounded-4xl' onClick={changeColor}>Change</button>
