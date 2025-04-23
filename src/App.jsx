@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-    <div className='container w-full p-4 md:p-8'>
+    <div className='container'>
       <h1 className=''>Enter the color to change</h1>
       <input type="text" name="input_color" id="color" placeholder='Enter color name or code to change' className='bg-white text-black w-70 border-2 rounded' />
       <button className='button bg-white text-black border-2  rounded-4xl' onClick={changeColor}>Change</button>
@@ -43,9 +43,9 @@ function App() {
         <li><button className='button bg-red-600 text-black  border-transparent  rounded-4xl align-middle' type="button" onClick={()=> {document.body.style.backgroundColor = "red", removeimg()}} >Red</button></li>
         <li><button className='button bg-blue-600 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "blue", removeimg()}}>Blue</button></li>
         <li><button className='button bg-yellow-400 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "yellow", removeimg()}}>Yellow</button></li>
-        <li><button className='button bg-green-500 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "green",removeimg}}>Green</button></li>
-        <li><button className='button bg-white  text-black border-2   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "white",removeimg}}>White</button></li>
-        <li><button className='button bg-black  text-white border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "black",removeimg}}>Black</button></li>
+        <li><button className='button bg-green-500 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "green",removeimg()}}>Green</button></li>
+        <li><button className='button bg-white  text-black border-2   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "white",removeimg()}}>White</button></li>
+        <li><button className='button bg-black  text-white border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "black",removeimg()}}>Black</button></li>
       </ol>
 
     
