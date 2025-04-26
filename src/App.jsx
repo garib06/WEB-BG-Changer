@@ -25,6 +25,8 @@ function App() {
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPosition = 'center'; 
     document.body.style.backgroundAttachment = 'scroll';
+    document.body.style.width='100%';
+    document.body.style.height='100vh';
   }
 
   return (
@@ -33,13 +35,13 @@ function App() {
       <h1 className=''>Enter the color to change</h1>
       <input type="text" name="input_color" id="color" placeholder='Enter color name or code to change' className='bg-white text-black w-70 border-2 rounded' />
       <button className='button bg-white text-black border-2  rounded-4xl' onClick={changeColor}>Change</button>
-      <p><b>OR</b></p>
+      <p><b className='or text-white text-2xl'>OR</b></p>
       <h1>Upload the file to change background</h1>
       <input type="file" accept='image/*' name="input_img" id="img" placeholder='Upload image to Chnage background' className='bg-white text-black w-70 border-2 rounded' />
       <button className='button bg-white text-black border-2  rounded-4xl' onClick={changeImage}>Change</button>
 
 
-      <ol className='ol  w-150 h-15 border-2 rounded-2xl'>
+      <ol className='ol'>
         <li><button className='button bg-red-600 text-black  border-transparent  rounded-4xl align-middle' type="button" onClick={()=> {document.body.style.backgroundColor = "red", removeimg()}} >Red</button></li>
         <li><button className='button bg-blue-600 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "blue", removeimg()}}>Blue</button></li>
         <li><button className='button bg-yellow-400 text-black  border-transparent   rounded-4xl' type="button" onClick={()=> {document.body.style.backgroundColor = "yellow", removeimg()}}>Yellow</button></li>

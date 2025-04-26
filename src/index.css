@@ -40,12 +40,20 @@ h1{
     1px 1px 0 #000;
    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.or{
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 ol{
-  background-color: #ffffff91;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(6, 1fr));
+  grid-gap: 1rem;
   text-align: center;
+  list-style-position: inside;
 }
 
 button {
